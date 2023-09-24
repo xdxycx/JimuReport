@@ -12,4 +12,4 @@ EXPOSE 8085
 
 ADD ./target/jimureport-example-1.6.jar ./
 
-CMD java -DMYSQL-HOST=jimureport-mysql -Dfile.encoding=utf-8 -Djava.security.egd=file:/dev/./urandom -jar jimureport-example-1.6.jar
+CMD java -DMYSQL-HOST=jimureport-mysql -DMYSQL-PORT=3307 -Dfile.encoding=utf-8 -Djava.security.egd=file:/dev/./urandom -jar jimureport-example-1.6.jar
